@@ -1,5 +1,6 @@
 "use client";
-import {  UserButton, useUser } from "@clerk/nextjs";
+import Navbar from "@/components/navbar/Navbar";
+import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
@@ -15,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-    <UserButton/>
+      <Navbar />
     </>
   );
 }
